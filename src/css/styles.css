@@ -1,0 +1,103 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji';
+      padding: 0;
+      margin: 0;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  ul,
+  ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+  
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  header{
+      background-color: #2ecc71;
+  }
+
+  #search-form{
+    display: flex;
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    justify-content: center;
+    padding: 20px 0;
+  }
+  
+  #search-form button {
+    font-size: 14px;
+    position: absolute;
+    height: 42px;
+    top: 25%;
+    right: 1px;
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 250ms linear;
+    border-radius: 4px;
+  }
+
+  .load-more {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .load-more.is-hidden {
+    display: none;
+  }
+  
+  #search-form button:hover,
+  #search-form button:focus,
+  .load-more:hover,
+  .load-more:focus {
+    background-color: #004667;
+  }
+
+
+  #search-form input {
+    height: 40px;
+    flex-grow: 1;
+    font-size: 18px;
+    padding-left: 15px;
+    border: 1px solid #303030;
+    border-radius: 5px;
+  }

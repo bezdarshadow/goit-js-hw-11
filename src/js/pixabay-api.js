@@ -9,7 +9,7 @@ export class PixabayAPI {
     constructor(keyword = null){
         this.page = 1;
         this.searchQuery = keyword;
-        this.per_page = 20;
+        this.per_page = 40;
         this.totalCount = this.per_page;
     }
 

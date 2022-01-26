@@ -9,6 +9,8 @@ export class PixabayAPI {
     constructor(keyword = null){
         this.page = 1;
         this.searchQuery = keyword;
+        this.per_page = 20;
+        this.totalCount = this.per_page;
     }
 
 
@@ -21,10 +23,10 @@ export class PixabayAPI {
                 orientation: 'horizontal',
                 safesearch: true,
                 page: this.page,
-                per_page: 20,
+                per_page: this.per_page,
             },
         }).then(response => {
-            return response.data
+            return response.data;
         }).catch(error => {
             console.log(error)
         })

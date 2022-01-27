@@ -13,7 +13,6 @@ export class PixabayAPI {
         this.totalCount = this.per_page;
     }
 
-
     fetchPhotos(){
         return axios.get(`${this.#BASE_URL}`, {
             params:{
@@ -25,12 +24,8 @@ export class PixabayAPI {
                 page: this.page,
                 per_page: this.per_page,
             },
-        }).then(response => {
-            return response.data;
-        }).catch(error => {
-            console.log(error)
-        })
-    }
+        });
+    };
 
 }
 

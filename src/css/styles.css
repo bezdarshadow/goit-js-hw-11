@@ -3,12 +3,13 @@ body {
       'Apple Color Emoji', 'Segoe UI Emoji';
       padding: 0;
       margin: 0;
+      background-color: rgb(158, 146, 146);
   }
   
   img {
     display: block;
-    width: 100%;
-    height: 275px;
+    max-width: 100%;
+    height: auto;
   }
   
   h1,
@@ -37,10 +38,17 @@ body {
     text-decoration: none;
   }
   
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   
   
   header{
-      background-color: #d85927;
+      background-color: rgb(163, 75, 204);
   }
 
   #search-form{
@@ -62,7 +70,7 @@ body {
     top: 25%;
     right: 1px;
     padding: 10px 20px;
-    background-color: #0073aa;
+    background-color: #c90c99; /* #0073aa */ /* #8200aa */
     color: #ffffff;
     border: none;
     text-transform: uppercase;
@@ -75,7 +83,7 @@ body {
   .load-more {
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 50px;
   }
   
   .load-more.is-hidden {
@@ -86,7 +94,7 @@ body {
   #search-form button:focus,
   .load-more:hover,
   .load-more:focus {
-    background-color: #004667;
+    background-color: #680e5c;
   }
 
 
@@ -101,6 +109,7 @@ body {
 
 
 
+
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -112,10 +121,24 @@ body {
     flex-basis: calc((100% - 120px) / 4);
     margin-left: 30px;
     margin-top: 30px;
+    background-color: rgb(163, 75, 204);
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    color: white;
 
   }
 
+  .photo-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
 
+
+  .gallery-img {
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+  }
  
 
  
